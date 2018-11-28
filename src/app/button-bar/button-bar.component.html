@@ -1,0 +1,12 @@
+  <div class="row">
+    <div class="col-md-4 m-5">
+      <input #box (keyup)="onKey(box.value)" type="text" class="form-control" placeholder="button titles">
+
+      <span *ngFor="let title of titleArray">
+          <button type="button" class="btn btn-primary" (click)="onClick(title)">{{title}}</button>      
+      </span>      
+
+    </div>
+  </div>
+
+
